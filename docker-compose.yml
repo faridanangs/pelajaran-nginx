@@ -1,0 +1,8 @@
+services:
+  nginx-app:
+    container_name: nginx-app
+    build: .
+    ports:
+      - 8081:80
+    volumes:
+      - ./index:/usr/share/nginx/html
